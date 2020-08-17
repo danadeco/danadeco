@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <title>DANA_deco</title>
+    <style>
+        #mainNav{
+            background-color: whitesmoke;
+            padding: 1.4%;
+        }
+        #mainbg{
+            height: 670px;
+            background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('./mainbg.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 3%;
+            padding-top: 2rem;
+            text-align: center;
+        }
+        #whitebox{
+            background-color: white;
+            text-align: center;
+            padding: 4%;
+            height: 350px;
+        }
+        
+        #whitebox2{
+            background-color: #EFF8FB;
+            text-align: center;
+            padding-top: 1rem;
+        }
+        
+        p.typing-txt{display: none;}
+  
+
+    .typing {  
+/*       position: absolute;*/ 
+     display: inline-block; 
+     font-size: 25px;
+     color: white;
+      animation-duration: 0.3s; 
+      animation-iteration-count: infinite; 
+    } 
+    @keyframes cursor{ 
+      0%{border-right: 0.5px solid #fff} 
+      50%{border-right: 0.5px solid #000} 
+      100%{border-right: 0.5px solid #fff} 
+    }
+
+    @media ( max-width: 1070px ) {
+            #mainbg{
+                background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('./mainbg.jpg') center center / cover no-repeat;
+            }
+            #mainslo{
+                font-size: 25px;
+            }
+            #cont{
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: center;
+            margin: 0 auto;
+            }
+            .logomain{
+                width: 135px;
+            }
+            #whitebox{
+                height: 490px;
+            }
+            #box{
+                align-items: center;
+                width: 90%;
+                min-width: 310px;
+                padding: 0.5%;
+                margin: 0.5%;
+                margin-bottom: 1.7rem;
+            }
+     }
+
+    </style>
+
+</head>
+<body style="padding-top: 4rem;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-blue fixed-top" id="mainNav" > 
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="./index.html" style=" font-family: 함초롱바탕;"> <img src='./logo.webp' class="logomain" style="width: 6.1rem; height:auto;"><b class="name1">&nbsp; </b><b class="name2" style="font-size: xx-small; position: relative; top: 0.2rem; color: #0B3861;"> PRIMIUM HOME INTERIOR</b></a> 
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> 
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto" style="color: #335771;">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" style="color: #00000090; font-weight: 600;" href="./index.html">&nbsp;Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="./intro.html">&nbsp; Company </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="./index.html">&nbsp; 시공사례 </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="./index.html">&nbsp; 견적문의 </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="./index.html">&nbsp; 인재채용 </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="http://skin-skin6.danadeco7.cafe24.com/?PREVIEW_MODE=1">&nbsp; SHOP </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <section id="mainbg">
+        <header class="masthead d-flex">
+            <div class="container text-center my-auto" style="padding-top: 2rem;">
+                <br>
+                <br>
+              <p class="typing-txt" id="mainslo" style ="font-size: large;"> 단아데코는 국내외 펜션, 호텔, 리조트의 공간을 책임지고 있습니다.</p>
+          <p class="typing"></p>
+          </div>
+    </section>
+    <section id="whitebox" >
+        <br>
+        <p style="font-size: 1.2rem; font-weight: 500;">단아데코는 쿠션 하나, 베갯잇 하나에도 소홀히 제작하지 않습니다.</p>
+        <br>
+        <p>단아데코는 공장직영으로 자체 생산을 하고 있어 원하는 사이즈와 디자인으로 맞춤 제작이 가능합니다</p>
+        <p>원단의 종류는 무수히 많습니다. 사진으로는 색상과 질감이 정확하게 표현되지 않습니다.</p>
+        <p>무료 방문상담 후 맞춤 제작, 시공까지 10 여년간 4천개 거래업체(호텔,펜션, 리조트)에서</p>
+        <p>증명받은 신뢰할 수 있는 품질과 무상 AS (6개월) 서비스로 고객만족에 최선을 다하겠습니다.</p>
+        <br>
+    </section>
+    <section id="whitebox2">
+    <h2 style="text-align: center;">PRODUCT</h2>
+    <br>
+    <div id="cont" style="display: flex;">
+        <section id="box" style="width: 33%; height: 25%;">
+            <img src="./img/ct.PNG" style="width: 33%; height: 25%; flex: 1;" alt="이미지">
+        </section>
+        <section id="box" style="width: 33%; height: 25%;">
+         <p>sdafghgdsa</p>
+         <p>sdafghgdsa</p>
+        </section>
+        <section id="box" style="width: 33%; height: 25%;">
+            <img src="./img/b1.PNG" style="width: 33%; height: 25%;" alt="이미지">
+        </section>
+    </div> 
+    <br>
+    <div id="cont" style="display: flex;">
+        <section id="box" style="width: 33%; height: 25%; flex: 1;">
+            <P>dsfrewedqwdefrwfg</P>
+            <p>sdafghgdsa</p>
+        </section>
+        <section id="box" style="width: 33%; height: 25%;">
+            <img src="./img/e1.PNG" style="width: 33%; height: 25%;" alt="이미지">
+        </section>
+        <section id="box" style="width: 33%; height: 25%;">
+            <p>sdafghgdsa</p>
+            <p>sdafghgdsa</p>
+        </section>
+    </div>       
+    </section>
+      <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+</body>
+</html>
