@@ -37,6 +37,9 @@
             text-align: center;
             padding-top: 1rem;
         }
+        #firstitem{
+          width: 100%; flex: 1;
+        }
         
         p.typing-txt{display: none;}
     
@@ -69,6 +72,7 @@
             #cont{
             flex-direction: column;
             flex-wrap: wrap;
+            justify-content: space-around;
             align-content: center;
             text-align: center;
             margin: 0 auto;
@@ -93,6 +97,9 @@
                 width: 45%;
                 padding: 1%;
                 float: left;
+            }
+            #firstitem{
+            width: 100%;
             }
             #historyimg{
               padding: 1%;
@@ -168,7 +175,7 @@
     <br>
     <div id="cont" style="display: flex;">
         <section id="box" style="width: 33%; height: 25%;">
-            <img src="./img/ct.PNG" style="width: 100%; flex: 1;" alt="이미지">
+            <img src="./img/ct.PNG" id="firstitem" alt="이미지">
         </section>
         <section id="box" style="width: 33%; height: 25%; padding: 3.5%; padding-top: 3rem; padding-left: 3rem; text-align: left;">
           <div style="font-size: 0.95rem;">
