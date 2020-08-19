@@ -29,7 +29,7 @@
             background-color: #f8f9fa;
             text-align: center;
             padding: 4%;
-            height: 450px;
+            height: 440px;
         }
         
         #whitebox2{
@@ -78,7 +78,7 @@
             }
             #whitebox{
                 padding: 10%;
-                height: 490px;
+                height: auto;
             }
             #box{
                 align-items: center;
@@ -96,6 +96,9 @@
             }
             #historyimg{
               padding: 1%;
+            }
+            #map_dana{
+             width: 90%;
             }
             #rightbox{
                 height: 510px;
@@ -126,7 +129,7 @@
                 <a class="nav-link js-scroll-trigger" href="./intro.html">&nbsp; Company </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="./index.html">&nbsp; 시공사례 </a>
+                <a class="nav-link js-scroll-trigger" href="./exam.html">&nbsp; 시공사례 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="./index.html">&nbsp; 견적문의 </a>
@@ -135,7 +138,7 @@
                 <a class="nav-link js-scroll-trigger" href="./index.html">&nbsp; 인재채용 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="http://skin-skin6.danadeco7.cafe24.com/?PREVIEW_MODE=1">&nbsp; SHOP </a>
+                <a class="nav-link js-scroll-trigger" href="http://danadeco.shop">&nbsp; SHOP </a>
               </li>
             </ul>
           </div>
@@ -165,7 +168,7 @@
     <br>
     <div id="cont" style="display: flex;">
         <section id="box" style="width: 33%; height: 25%;">
-            <img src="./img/ct.PNG" style="width: 100%; flex: 1;" alt="이미지">
+            <img src="./img/ct.PNG" style="width: 100%;" alt="이미지">
         </section>
         <section id="box" style="width: 33%; height: 25%; padding: 3.5%; padding-top: 3rem; padding-left: 3rem; text-align: left;">
           <div style="font-size: 0.95rem;">
@@ -294,59 +297,41 @@
       <br>
       <br>
       <br>
-      <img src="./img/history.png" id="historyimg" alt="history" style="width: 70%; padding: 4%;">
+      <img src="./img/history.png" id="historyimg" alt="history" style="width: 70%; padding: 2%; position: relative; top: -6rem;">
     </section>
     <br>
     <footer class="footer text-center">
       <div class="container">
-        <ul class="list-inline mb-5">
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/profile.php?id=100004987666963" target=" ">
-              <i class="icon-social-facebook"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-              <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/frank_0916_/?hl=ko" target=" ">
-              <i class="icon-social-instagram"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-              <a class="social-link rounded-circle text-white mr-3" href="https://github.com/BBongDDa" target=" ">
-              <i class="icon-social-github"></i>
-            </a>
-          </li>
-        </ul>
   
   
         <P style="text-align: center;"> [MAP_단아데코]</P>
-  <script> 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.306682050242!2d127.20654101538379!3d37.688996024862895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cc986d6f79bcd%3A0x62191b5febcf910f!2zKOyjvCnri6jslYTrjbDsvZQ!5e0!3m2!1sko!2skr!4v1597857805586!5m2!1sko!2skr" id="map_dana" width="900" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
   
-    function initialize() { 
-    var myLatlng = new google.maps.LatLng(37.688996,127.206541,17);
-    var mapOptions = { 
-          zoom: 14,
-          center: myLatlng, 
-          mapTypeId: google.maps.MapTypeId.ROADMAP 
-      } 
-  var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions); 
-  var marker = new google.maps.Marker({ 
-  position: myLatlng, 
-  map: map, 
-  title: "단아데코"
-  });
-    } 
-  window.onload = initialize;
-  </script>
-  <div id="map_canvas" style="width: 95%; height: 400px; margin: 0 auto;"></div>
-  
-  <br>
-  <br>
-  
-        <p class="text-muted small mb-0">Copyright &copy; DANADECO 2029</p>
-        <h1 class="text-muted small mb-0">(주) 단아데코</h1>
-        <br>
-        <br>
       </div>
+      <br>
+      <br>
+      <br>
+      <div style="background-color: #335771; width: 100%; height: auto;"> 
+        <section style="padding-top: 3rem; padding-left: 15%; padding-right: 15%; text-align: left; font-size: small; color: white;">
+          <img src="./img/logowhite.png" alt="logo" style="width: 7rem; height:auto;">
+          <br>
+          <br>
+          <P><span style="font-weight: 600;">회사명</span> (주) 단아데코&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: 600;">대표</span> 전영결</P>
+          <P><span style="font-weight: 600;">대표전화</span> 1661-8058</P>
+          <p><span style="font-weight: 600;">주소</span> 경기도 남양주시 오남읍 양지로 46번길 74</p>
+          <br>
+          <hr style="border: solid 1px white;">
+          <br>
+          <p>happy8482@naver.com</p>
+          <p>031-624-5382</p>
+        </section>
+  <br>
+  <br>
+        <p class="text small mb-1" style="color: white;">Copyright &copy; DANADECO 2029</p>
+        <h1 class="text small mb-1" style="color: white;">(주) 단아데코</h1>
+      <br>
+      </div>
+
     </footer>
   </div>
       <!-- Bootstrap core JavaScript -->
