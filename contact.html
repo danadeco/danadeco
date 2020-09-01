@@ -9,7 +9,12 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <link href="css/scrolling-nav.css" rel="stylesheet">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <title>DANA_deco</title>
+    <link rel="stylesheet" href="./animate.css">
+    <script src="./wow.min.js"></script>  
+   <script>
+       new WOW().init();
+   </script>
+   <title>(주)단아데코_DANADECO</title>
     <style>
         #mainNav{
             background-color: whitesmoke;
@@ -21,8 +26,17 @@
         #whitebox{
             background-color: white;
             text-align: center;
+            align-items: center;
             padding: 2%;
             height: auto;
+        }
+        #contact{
+        border: solid rgba(165, 200, 222, 1) 1px;
+        width: 55%;
+        padding: 2%;
+        padding-left: 3rem;
+        margin: 0 auto;
+        text-align: center;
         }
         #cont{
           display: flex;
@@ -37,7 +51,13 @@
             text-align: center;
             align-items: center;
         }
-        
+        #inputtag{
+            border: none;
+            height: 45px;
+            box-shadow: lightgrey 0px 0px 10px;
+            margin: 5.626px;
+            width: 300px;
+        }
         #whitebox2{
             height: auto;
             background-color: white;
@@ -157,10 +177,10 @@
                 <a class="nav-link js-scroll-trigger" href="./exam.html">&nbsp; 시공사례 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" style="color: #00000090; font-weight: 600;" href="./index.html">&nbsp; 견적문의 </a>
+                <a class="nav-link js-scroll-trigger" style="color: #00000090; font-weight: 600;" href="./contact.html">&nbsp; 견적문의 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="./index.html">&nbsp; 인재채용 </a>
+                <a class="nav-link js-scroll-trigger" href="./hire.html">&nbsp; 인재채용 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="http://danadeco.shop">&nbsp; SHOP </a>
@@ -172,7 +192,55 @@
     <section id="whitebox">
       <br>
       <br>
-
+      <section id="contact">
+        <p style="font-style: Source Sans Pro; font-weight: 600; font-size: 1.7rem; text-align: center;">무료 방문 견적 요청</p>
+        <br>
+        <form
+        action="https://formspree.io/xeqrbppv"
+        method="POST"
+         style="text-align: left;">
+        <label>
+          <span>&nbsp;이름</span> <br>
+          <input id="inputtag" type="text" name="이름">
+        </label>
+        <br>
+        <br>
+        <label>
+          <span>&nbsp;Email</span> <br>
+          <input id="inputtag"  type="email" name="회신 이메일">
+        </label>
+        <br>
+        <br>
+        <label>
+           <span>&nbsp;전화번호</span> <br>
+            <input id="inputtag"  type="text" name="전화번호">
+          </label>
+          <br>
+          <br>
+          <label>
+            <span>&nbsp;지역</span> <br>
+             <input id="inputtag" type="text" name="지역">
+           </label>
+           <br>
+           <br>
+        <span>&nbsp;서비스 선택</span> <br>
+        <input id="inputtag" type="text" list="major" type="text" name="서비스">
+       <datalist id="major">
+       <option value="커튼 및 블라인드 시공">
+       <option value="영문학과">
+       <option value="국문학과">
+       </datalist>
+        <br>
+        <br>
+        <label>
+            <span>&nbsp;문의사항</span> <br>
+            <textarea id="inputtag"  name="message"></textarea>
+          </label>
+          <br>
+          <br>
+        <input class="btn btn-secondary" type="submit" value="Send" onclick="alert('확인을 누르면 제출됩니다.')">
+        </form>
+        </section>
     </section>
 <br>
 <br>
