@@ -32,9 +32,8 @@
         }
         #contact{
         border: solid rgba(165, 200, 222, 1) 1px;
-        width: 55%;
-        padding: 2%;
-        padding-left: 3rem;
+        width: 45%;
+        padding: 3.5%;
         margin: 0 auto;
         text-align: center;
         }
@@ -54,6 +53,7 @@
         #inputtag{
             border: 0.5px lightgrey;
             height: 45px;
+            padding-left: 3rem;
             box-shadow: lightgrey 0px 0px 10px;
             margin: 5.626px;
             width: 300px;
@@ -118,6 +118,13 @@
 
             margin: 0 auto;
             }
+            #contact{
+             border: solid rgba(165, 200, 222, 1) 1px;
+              width: 85%;
+              padding: 2.5%;
+              margin: 0 auto;
+              text-align: center;
+        }
             #CEOPIC{
                 height: auto;
                 width: 80%;
@@ -126,6 +133,14 @@
             .logomain{
                 width: 135px;
             }
+            #inputtag{
+            border: 0.5px lightgrey;
+            height: 45px;
+            box-shadow: lightgrey 0px 0px 10px;
+            margin: 5.626px;
+            padding-left: 3rem;
+            width: 70%;
+        }
             #leftbox{
                 height: auto;
                 width: 50%;
@@ -193,37 +208,38 @@
       <br>
       <br>
       <section id="contact">
-        <p style="font-style: Source Sans Pro; font-weight: 600; font-size: 1.7rem; text-align: center;">무료 방문 견적 요청</p>
+          <br>
+        <p style="font-style: Source Sans Pro; font-weight: 600; padding-left: 0rem; font-size: 1.7rem; text-align: center;">무료 방문 견적 요청</p>
         <br>
         <form
         action="https://formspree.io/xeqrbppv"
         method="POST"
          style="text-align: left;">
         <label>
-          <span>&nbsp;이름</span> <br>
+          <span style="font-size: small; font-family: 굴림">&nbsp;이름</span> <br>
           <input id="inputtag" type="text" name="이름">
         </label>
         <br>
         <br>
         <label>
-          <span>&nbsp;Email</span> <br>
+          <span style="font-size: small; font-family: 굴림">&nbsp;Email</span> <br>
           <input id="inputtag"  type="email" name="회신 이메일">
         </label>
         <br>
         <br>
         <label>
-           <span>&nbsp;전화번호</span> <br>
+           <span style="font-size: small; font-family: 굴림">&nbsp;전화번호</span> <br>
             <input id="inputtag"  type="text" name="전화번호">
           </label>
           <br>
           <br>
           <label>
-            <span>&nbsp;지역</span> <br>
+            <span style="font-size: small; font-family: 굴림">&nbsp;지역</span> <br>
              <input id="inputtag" type="text" name="지역">
            </label>
            <br>
            <br>
-        <span>&nbsp;서비스 선택</span> <br>
+        <span style="font-size: small; font-family: 굴림">&nbsp;서비스 선택</span> <br>
         <input id="inputtag" type="text" list="major" type="text" name="서비스">
        <datalist id="major">
        <option value="커튼 및 블라인드 시공">
@@ -233,8 +249,8 @@
         <br>
         <br>
         <label>
-            <span>&nbsp;문의사항</span> <br>
-            <textarea id="inputtag" style="width: ;" name="message"></textarea>
+            <span style="font-size: small; font-family: 굴림">&nbsp;문의사항</span> <br>
+            <textarea id="inputtag" name="message"></textarea>
           </label>
           <br>
           <br>
