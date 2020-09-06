@@ -32,7 +32,7 @@
         }
         #contact{
         border: solid rgba(165, 200, 222, 1) 1px;
-        width: 45%;
+        width: 48%;
         padding: 3.5%;
         margin: 0 auto;
         text-align: center;
@@ -44,6 +44,9 @@
             text-align: center;
             align-items: center;
         }
+        .logomain{
+                width: 135px;
+            }
         #cont2{
             margin-top: auto;
             background-color: white;
@@ -54,9 +57,19 @@
             border: 0.5px lightgrey;
             height: 45px;
             padding-left: 1.5rem;
-            box-shadow: lightgrey 0px 0px 10px;
+            border: #EFF0F1  2px solid;
+            background-color: #F8F8F9;
             margin: 5.626px;
             width: 300px;
+        }
+        #textinput{
+          border: #EFF0F1  2px solid;
+            background-color: #F8F8F9;
+            height: 170px;
+            margin: 5.626px;
+            padding: 2%;
+            padding-left: 1.5rem;
+            width: 400px;
         }
         #whitebox2{
             height: auto;
@@ -134,12 +147,20 @@
                 width: 135px;
             }
             #inputtag{
-            border: lightgrey 1px solid;
+              border: #EFF0F1  2px solid;
+            background-color: #F8F8F9;
             height: 45px;
-            box-shadow: lightgrey 0px 0px 10px;
             margin: 5.626px;
             padding-left: 1.5rem;
             width: 80%;
+        }
+        #textinput{
+          border: #EFF0F1  2px solid;
+            background-color: #F8F8F9;
+            height: 170px;
+            margin: 5.626px;
+            padding-left: 1.5rem;
+            width: 120%;
         }
             #leftbox{
                 height: auto;
@@ -208,39 +229,40 @@
       <br>
       <br>
       <section id="contact">
+          <img src="./img/logo.png" class="logomain">
           <br>
-        <p style="font-style: Source Sans Pro; font-weight: 600; padding-left: 0rem; font-size: 1.7rem; text-align: center;">무료 방문 견적 요청</p>
+        <p style="font-style: Source Sans Pro; font-weight: 600; color: #2D557D; padding-left: 0rem; padding-top: 0.6rem; font-size: 1.5rem; text-align: center;">무료 방문 견적 요청</p>
         <br>
         <form
         action="https://formspree.io/xeqrbppv"
         method="POST"
          style="text-align: left;">
         <label>
-          <span style="font-size: small; font-family: 굴림">&nbsp;이름</span> <br>
-          <input id="inputtag" type="text" name="이름">
+          <span style="font-size: small; font-family: 굴림; color: #2868A8;">&nbsp;*이름</span> <br>
+          <input id="inputtag" type="text" placeholder="Name" name="이름">
         </label>
         <br>
         <br>
         <label>
-          <span style="font-size: small; font-family: 굴림">&nbsp;Email</span> <br>
-          <input id="inputtag" type="email" name="회신 이메일">
+          <span style="font-size: small; font-family: 굴림; color: #2868A8;">&nbsp;*Email</span> <br>
+          <input id="inputtag" type="email" placeholder="user@example.com" name="회신 이메일">
         </label>
         <br>
         <br>
         <label>
-           <span style="font-size: small; font-family: 굴림">&nbsp;전화번호</span> <br>
-            <input id="inputtag"  type="text" name="전화번호">
+           <span style="font-size: small; font-family: 굴림; color: #2868A8;">&nbsp;*전화번호</span> <br>
+            <input id="inputtag"  type="text" placeholder="Phone number" name="전화번호">
           </label>
           <br>
           <br>
           <label>
-            <span style="font-size: small; font-family: 굴림">&nbsp;지역</span> <br>
-             <input id="inputtag" type="text" name="지역">
+            <span style="font-size: small; font-family: 굴림;color: #2868A8;">&nbsp;지역</span> <br>
+             <input id="inputtag" type="text" placeholder="Area" name="지역">
            </label>
            <br>
            <br>
-        <span style="font-size: small; font-family: 굴림">&nbsp;서비스 선택</span> <br>
-        <input id="inputtag" type="text" list="major" type="text" name="서비스">
+        <span style="font-size: small; font-family: 굴림;color: #2868A8;">&nbsp;*서비스 선택</span> <br>
+        <input id="inputtag" type="text" list="major" placeholder="Services" type="text" name="서비스">
        <datalist id="major">
        <option value="커튼 및 블라인드 시공">
        <option value="침구, 이불 구매">
@@ -250,15 +272,14 @@
         <br>
         <label>
             <span style="font-size: small; font-family: 굴림">&nbsp;문의사항</span> <br>
-            <textarea style=" border: 0.5px lightgrey;
-            box-shadow: lightgrey 0px 0px 10px;
-            margin: 5.626px;
-            padding-left: 1.5rem; width: 100%; height: 170px;" name="message"></textarea>
+            <textarea id="textinput" placeholder="Message" name="message"></textarea>
           </label>
           <br>
           <br>
-        <input class="btn btn-secondary" type="submit" value="Send" onclick="alert('확인을 누르면 제출됩니다.')">
-        </form>
+          <div style="text-align: center;">
+        <input  class="btn btn-secondary btn-lg" style=" background-color: #2e71b4c2; border: none; margin: 1%;" type="submit" value="Send" onclick="alert('확인을 누르면 제출됩니다.')" >
+      </div>
+      </form>
         </section>
     </section>
 <br>
