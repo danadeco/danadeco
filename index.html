@@ -22,8 +22,8 @@
             padding: 1.4%;
         }
         #mainbg{
-            height: 670px;
-            background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('./img/mainbg.jpg');
+            height: 700px;
+            background: url('./img/mainbg_v2.PNG');
             background-size: cover;
             background-attachment: fixed;
             padding: 2%;
@@ -43,6 +43,10 @@
         }
         #firstitem{
           width: 100%; flex: 1;
+        }
+        .imgitem{
+          width: 32%;
+
         }
         
         p.typing-txt{display: none;}
@@ -71,7 +75,10 @@
 
     @media ( max-width: 1070px ) {
             #mainbg{
-                background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('./img/mainbg.jpg') center center / cover no-repeat;
+                background: url('./img/mainbg_v2.PNG') center center / cover no-repeat;
+                height: 450px;
+
+
             }
             #mainslo{
                 font-size: 25px;
@@ -151,7 +158,7 @@
                 <a class="nav-link js-scroll-trigger" href="./intro.html">&nbsp; Company </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="./exam.html">&nbsp; 시공사례 </a>
+                <a class="nav-link js-scroll-trigger" href="./exam.html">&nbsp; Product </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="./contact.html">&nbsp; 견적문의 </a>
@@ -171,8 +178,6 @@
             <div class="container text-center my-auto" style="padding-top: 2rem;">
                 <br>
                 <br>
-              <p class="typing-txt" id="mainslo" style ="font-size: large;"> 단아데코는 국내외 펜션, 호텔, 리조트의 공간을 책임지고 있습니다.</p>
-          <p class="typing"></p>
           </div>
     </section>
     <section class="content-section bg-white" id="whitebox" >
@@ -191,7 +196,7 @@
     <br>
     <div id="cont" style="display: flex;">
         <section id="box" class="wow fadeInLeft">
-            <img src="./img/ct.PNG" class="imgitem"id="firstitem" alt="이미지">
+            <img src="./img/ct1.PNG" class="imgitem"id="firstitem" alt="이미지">
         </section>
         <section id="box" class="wow fadeInDown" style="width: 33%; height: 25%; padding: 3.5%; padding-top: 3rem; padding-left: 3rem; text-align: left;">
           <div style="font-size: 0.95rem;">
@@ -211,7 +216,6 @@
             <img src="./img/b1.PNG"class="imgitem" style="width: 100%; " alt="이미지">
         </section>
     </div> 
-    <br>
     <div id="cont" style="display: flex;">
         <section id="box" class="wow fadeInLeft" style="width: 33%; height: 25%; padding: 3.5%; padding-top: 3rem; padding-left: 3rem; text-align: left;">
           <div style="font-size: 0.95rem;">
